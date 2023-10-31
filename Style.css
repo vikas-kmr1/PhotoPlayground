@@ -21,10 +21,9 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 
 body {
     background-color: rgb(228, 214, 214);
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, sans-serif; /* Specify a font-family for better text rendering */
 }
+
 
 /*header start*/
        /* button hamburger start*/
@@ -409,7 +408,7 @@ ol, ul {
 
 @media screen and (max-width: 1149px) {
     div.header-nav-link {
-      display: none;
+        display: none;
     }
 }
 .Main-header .header-nav-link .Learn-more-list {
@@ -639,29 +638,11 @@ footer.Main-footer {
 #holder {
     width: 300px;
     height: 360px;
-}
-
-#holder {
     border: 6px dashed #ccc;
-}
-#holder {
-    margin: 10px 0 10px 10px;
-    float: left;
-    width: 300px;
-    height: 320px;
-    overflow: auto;
     text-align: center;
     background-color: #fff;
-    font-size: .9em;
-}
-
-.left_area {
-    overflow: auto;
-    background-color: #fff;
-    min-height: 280px;
-    width: 300px;
-    height: 310px;
-    height: 360px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
 .left_area {
@@ -683,41 +664,39 @@ footer.Main-footer {
 #counter_area, #s_bt_area, #title_t1, #a_top, #element_middle, #title_t0, #cp_value_txt, #foot_el1, #howto, #foot_el2 {
     display: inline;
 }
-
+    #element_middle{
+        position: absolute;
+    }
 
 .middle_area {
-    float: left;
-    margin: 10px 0 0 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     width: 320px;
     border: 0 dashed #b3b3b3;
 }
-.middle_area {
-    float: left;
-    margin: 10px 0 0 18px;
-    width: 300px;
-    border: 0 dashed #b3b3b3;
-}
+
 
 
 #compressed_result {
-    border: 6px solid #e6e6e6;
-}
-
-#compressed_result {
-    border: 6px solid #e6e6e6;
-    margin: 10px 10px 10px 0;
-    float: right;
     width: 300px;
-}
-
-
-.right_area {
-    width: 300px;
-    height: 340px;
     height: 360px;
+    border: 6px solid #e6e6e6;
+    text-align: center;
+    position: absolute;
+    background-color: #fff;
+    font-size: 0.9em;
+    right: 0;
+    top: 100px
 }
+
+
+
+
 .right_area {
-    height: 300px;
+    height: 370px;
     width: 300px;
     min-height: 280px;
     overflow: auto;
@@ -726,15 +705,7 @@ footer.Main-footer {
     width: 300px;
     height: 320px;
 }
-.right_area {
-    width: 300px;
-    overflow: auto;
-    background-color: #fff;
-    min-height: 270px;
-    width: 300px;
-    border: 6px solid #e6e6e6;
-    height: 370px;
-}
+
 .box_sh {
     box-shadow: 0 1px 4px rgb(0 0 0 / 27%), 0 0 40px rgb(0 0 0 / 6%) inset;
     -webkit-box-shadow: 0 1px 4px rgb(0 0 0 / 27%), 0 0 60px rgb(0 0 0 / 10%) inset;
